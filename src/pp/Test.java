@@ -7,24 +7,30 @@ public class Test {
 			
 		ArrayList<String> first=new ArrayList<String>();
 		first.add("Vijay");
-		first.add("Kiran");
-		System.out.println("First"+first);
+		
+		
+		ArrayList<String> middle=new ArrayList<String>();
+		middle.add("Murlidhar");
+		
 		ArrayList<String> last=new ArrayList<String>();
 		last.add("Kadam");
-		last.add("Somase");
-		System.out.println("Last"+last);
-			
+		
 		LinkedList<String> l=new LinkedList<String>();
 			
 	Iterator<String> i=first.iterator();
-	Iterator<String> j=last.iterator();
+	Iterator<String> j=middle.iterator();
+	Iterator<String> k=last.iterator();
 	
-	while (i.hasNext()&&j.hasNext()) {
-	     l.add(i.next()+" "+j.next());
+	while (i.hasNext()&&j.hasNext()&&k.hasNext()) {
+	     String str=i.next()+" "+j.next()+" "+k.next();
+	     l.add(str);
 	}
-	System.out.println("First & Last="+l);
+	System.out.println("Full name"+l);
+	System.out.println("kkkk");
+	System.out.println("hr");
+	
 		
-		System.out.println("test");
+	
 	}
 
 }
